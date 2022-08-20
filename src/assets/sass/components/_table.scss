@@ -2,15 +2,14 @@
 	margin: 0;
 	font-size: 15px;
 	background-color: hsl(var(--white));
-	box-shadow: 0 0 8px hsl(var(--base) / 0.06);
 	thead {
 		tr {
+			border-color: hsl(var(--light-900));
 			th {
-				background: hsl(var(--base));
 				text-align: center;
 				font-size: 15px;
 				padding: 15px;
-				color: hsl(var(--white));
+				color: hsl(var(--body));
 				font-family: var(--heading-font);
 				font-weight: 500;
 				&:first-child {
@@ -85,6 +84,7 @@
 					}
 					&::before {
 						display: block;
+						text-align: left;
 					}
 				}
 			}
@@ -125,6 +125,7 @@
 					}
 					&::before {
 						display: block;
+						text-align: left;
 					}
 				}
 			}
@@ -165,6 +166,7 @@
 					}
 					&::before {
 						display: block;
+						text-align: left;
 					}
 				}
 			}

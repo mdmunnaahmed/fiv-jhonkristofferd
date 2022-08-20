@@ -39,3 +39,43 @@
 	}
 }
 // Home Page Section
+
+
+// After Login Sections
+.filter {
+	gap: 10px 40px;
+	li {
+		a {
+			padding: 10px 0;
+			border: 0 !important;
+			position: relative;
+			color: hsl(var(--body));
+			&.active {
+				&::before {
+					background-color: hsl(var(--base));
+				}
+			}
+			&::before {
+				@extend %position-set;
+				top: auto;
+				bottom: 0;
+				border-radius: 5px;
+				height: 4px;
+			}
+		}
+	}
+}
+.search-wrapper {
+	.form-group {
+		position: relative;
+		.btn {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			padding: 10px 15px;
+			
+		}
+	}
+}
+// After Login Sections

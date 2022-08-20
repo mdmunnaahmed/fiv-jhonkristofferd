@@ -3,12 +3,14 @@
 }
 .form--control {
 	height: 50px;
-	border-radius: 5px;
+	border-radius: 12px;
 	border: 1px solid hsl(var(--border));
 	outline: 0 !important;
 	box-shadow: none !important;
+	background-color: #eaeaf5;
 	&:focus {
 		border: 1px solid hsl(var(--base));
+		background-color: #eaeaf5;
 	}
 }
 .form--control[readonly] {

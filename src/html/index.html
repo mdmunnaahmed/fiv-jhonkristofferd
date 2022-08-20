@@ -9,7 +9,9 @@
         <div class="body-wrapper-inner__left position-relative pt-80">
             <h5 class="title text--warning mb-4 pb-2" style="font-family: 'ahsing'; font-size: 80px;">DAPOK</h5>
             <p class="mb-4 pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <a href="" class="btn btn--accent">Sign in</a>
+            <button class="btn btn--accent" data-bs-toggle="modal" data-bs-target="#accountModal">Sign in</button>
+            <!-- Button trigger modal -->
+
             <ul class="social-links d-flex flex-wrap pt-100 gap-3">
                 <li><a href=""><img class="mw-100" src="assets/images/icon/facebook.png" alt="icon"></a></li>
                 <li><a href=""><img class="mw-100" src="assets/images/icon/twitter.png" alt="icon"></a></li>
@@ -22,7 +24,11 @@
         </div>
     </div>
 </div>
+
 <!-- Home Page Section -->
+@@include('../partial-html/_sign-in.html')
+@@include('../partial-html/_sign-up.html')
+
 
 @@include('../partial-html/_footer.html')
 @@include('../partial-html/_template-bottom.html')

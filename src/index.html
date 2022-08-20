@@ -46,7 +46,7 @@
                     <a href="faq.html">FAQ</a>
                 </li>
                 <li>
-                    <a href="javascript:void(0)" class="btn bg-white px-3 py-2 fs--20px text--dark">Sign in</a>
+                    <button data-bs-toggle="modal" data-bs-target="#accountModal" class="btn bg-white px-3 py-2 fs--20px text--dark">Sign in</button>
                 </li>
             </ul>
             <div class="header-trigger-wrapper d-flex d-lg-none align-items-center">
@@ -62,7 +62,9 @@
         <div class="body-wrapper-inner__left position-relative pt-80">
             <h5 class="title text--warning mb-4 pb-2" style="font-family: 'ahsing'; font-size: 80px;">DAPOK</h5>
             <p class="mb-4 pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-            <a href="" class="btn btn--accent">Sign in</a>
+            <button class="btn btn--accent" data-bs-toggle="modal" data-bs-target="#accountModal">Sign in</button>
+            <!-- Button trigger modal -->
+
             <ul class="social-links d-flex flex-wrap pt-100 gap-3">
                 <li><a href=""><img class="mw-100" src="assets/images/icon/facebook.png" alt="icon"></a></li>
                 <li><a href=""><img class="mw-100" src="assets/images/icon/twitter.png" alt="icon"></a></li>
@@ -75,7 +77,114 @@
         </div>
     </div>
 </div>
+
 <!-- Home Page Section -->
+<!-- Modal -->
+<div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content border-0">
+            <div class="modal-body p-0 ">
+                <div class="account-wrapper d-flex">
+                    <div class="account-wrapper__left bg--accent">
+                        <img src="assets/images/thumb/login.png" alt="thumb" class="mw-100">
+                    </div>
+                    <div class="account-wrapper__right">
+                        <form action="">
+                            <div class="form-group mb-3 mb-xl-4">
+                                <label class="form-label" for="">Username or Email</label>
+                                <input type="text" class="form-control form--control">
+                            </div>
+                            <div class="form-group mb-3 mb-xl-4">
+                                <label class="form-label" for="">Password</label>
+                                <input type="password" class="form-control form--control">
+                            </div>
+                            <div class="d-flex flex-wrap gap-2 justify-content-between">
+                                <div class="form-group custom--checkbox">
+                                    <input type="checkbox" id="rem">
+                                    <label for="rem">Remember Password</label>
+                                </div>
+                                <a href="" class="text--base">Forgot Password?</a>
+                            </div>
+                            <div class="text-center mt-4 mt-xl-5">
+                                <button type="submit" class="btn btn--accent">Sign in</button>
+                            </div>
+                            <p class="text-center mt-4 mt-xl-5 mb-0">Don’t have an account? <button type="button" class="text--base fw-bold bg-transparent border-0" data-bs-toggle="modal" data-bs-target="#accountModal2">Sign Up.</button></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade pt-50 pb-50" id="accountModal2" tabindex="-1" aria-labelledby="accountModal2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content border-0">
+            <div class="modal-body p-0 ">
+                <div class="account-wrapper d-flex">
+                    <div class="account-wrapper__left">
+                        <div class="login-thumb">
+                            <img src="assets/images/thumb/sign-up.png" alt="thumb">
+                            <div class="thumb-content">
+                                <h2 class="title mb-1 text-white">Create an Account</h2>
+                                <p class="pb-40 text-white">Please enter your details to sign up and be part of our community</p>
+                                <p class="text-white">Already have an account? <button type="button" data-bs-toggle="modal" data-bs-target="#accountModal" class="text--base fw-bold border-0 bg-transparent">Sign In</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="account-wrapper__right">
+                        <form action="">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="">First Name</label>
+                                        <input type="text" class="form-control form--control">
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="">Last Name</label>
+                                        <input type="text" class="form-control form--control">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="">Username</label>
+                                        <input type="text" class="form-control form--control">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="">Email</label>
+                                        <input type="email" class="form-control form--control">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="">Password</label>
+                                        <input type="password" class="form-control form--control">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group mb-3">
+                                        <label class="form-label" for="">Confirm Password</label>
+                                        <input type="password" class="form-control form--control">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="text-center mt-3 mt-sm-4">
+                                        <button type="submit" class="btn btn--accent">Sign Up</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 

@@ -1,0 +1,119 @@
+// Sidebar Menu Starts
+.sidebar-wrapper {
+	max-width: 100px;
+	height: 100vh;
+	.sidebar-inner {
+		padding: 24px;
+	}
+}
+.sidebar-menu {
+	@extend %flex;
+	gap: 35px;
+	.sidebar-menu-item {
+		.sidebar-menu-link {
+			width: 55px;
+			height: 55px;
+			@extend %flex-center;
+			border-radius: 5px;
+			&.active,
+			&:hover {
+				background-color: hsl(var(--base));
+			}
+			img {
+				max-width: 100%;
+				object-fit: contain;
+			}
+		}
+	}
+}
+// Sidebar Menu Ends
+
+//  Main Content Starts
+.main-content {
+	width: calc(100% - 100px);
+}
+.main-content-inner-inner {
+	padding: 35px;
+	@include breakpoint(max-md) {
+		padding: 25px;
+	}
+	@include breakpoint(max-sm) {
+		padding: 15px;
+	}
+}
+.top-menu-wrapper {
+	padding: 15px 35px;
+	@include breakpoint(max-md) {
+		padding: 10px 25px;
+	}
+	@include breakpoint(max-sm) {
+		padding: 10px 15px;
+	}
+}
+.top-menu {
+	.top-menu-item {
+		position: relative;
+		.top-menu-link {
+			width: 35px;
+			height: 35px;
+			text-align: center;
+			line-height: 35px;
+			border-radius: 50%;
+			color: hsl(var(--white));
+			background-color: hsl(var(--accent));
+			&:focus {
+				& ~ .dropdown-wrapper {
+					visibility: visible;
+					opacity: 1;
+					transform: scale(1);
+				}
+			}
+		}
+	}
+}
+.dropdown-wrapper {
+	position: absolute;
+	top: calc(100% - 1px);
+	right: 0;
+	max-width: 320px;
+	min-width: 310px;
+	padding: 25px 20px;
+	background-color: hsl(var(--white));
+	box-shadow: 0px 1px 6px 2px hsl(var(--dark) / 0.2);
+	border-radius: 5px;
+	visibility: hidden;
+	opacity: 0;
+	@extend %transition;
+	transform-origin: top;
+	transform: scaleY(0.85);
+	z-index: 11;
+	&:hover {
+		visibility: visible;
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+.notification-item {
+	@extend %flex;
+	justify-content: space-between;
+	padding: 13px 0;
+	border-top: 1px solid hsl(var(--light-700));
+	&:last-child {
+		padding-bottom: 0;
+	}
+	&__thumb {
+		width: 45px;
+		height: 45px;
+		@extend %flex-center;
+		border-radius: 50%;
+		background-color: hsl(var(--accent));
+		color: hsl(var(--white));
+		flex-shrink: 0;
+		font-size: 24px;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
+//  Main Content Ends

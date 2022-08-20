@@ -156,7 +156,7 @@ if (videoItem) {
 // Active Path Active
 var path = location.pathname.split("/");
 var current = location.pathname.split("/")[path.length - 1];
-$(".menu li a").each(function () {
+$(".sidebar-menu li a").each(function () {
 	if ($(this).attr("href").indexOf(current) !== -1 && current != "") {
 		$(this).addClass("active");
 	}

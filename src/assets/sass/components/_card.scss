@@ -2,67 +2,34 @@
 	border: 1px solid hsl(var(--border));
 	border-radius: 5px;
 }
-
 .custom--card .card-header,
 .custom--card .card-footer {
-	background: hsl(var(--base));
-	text-align: center;
+	background: hsl(var(--white));
+	padding: 35px;
+	border-color: hsl(var(--border)) !important;
 	.title {
-		color: hsl(var(--white));
 		margin: 0;
 	}
-}
-.custom--card .card-header,
-.custom--card .card-footer {
-	padding: 15px 25px;
-	border-color: hsl(var(--border)) !important;
-	@include breakpoint(max-sm) {
-		padding: 10px 20px;
-	}
-	@include breakpoint(max-sm) {
-		padding: 8px 15px;
-	}
-}
-.custom--card .card-body {
-	padding: 25px;
-	@include breakpoint(max-sm) {
-		padding: 20px;
-	}
-	@include breakpoint(max-xs) {
-		padding: 15px;
-	}
-}
-
-.custom--card.card--lg .card-header,
-.custom--card.card--lg .card-footer {
-	padding: 20px 35px;
-	@include breakpoint(max-md) {
-		padding: 15px 25px;
-	}
-	@include breakpoint(max-sm) {
-		padding: 10px 20px;
-	}
-	@include breakpoint(max-xs) {
-		padding: 8px 15px;
-	}
-}
-.custom--card.card--lg .card-body {
-	padding: 35px;
 	@include breakpoint(max-md) {
 		padding: 25px;
 	}
 	@include breakpoint(max-sm) {
-		padding: 20px;
+		padding: 15px;
+	}
+}
+.custom--card .card-header {
+	border-radius: 10px 10px 0 0;
+	box-shadow: 0 2px 3px #d0cde180;
+}
+.custom--card .card-footer {
+	border-radius: 0 0 10px 10px;
+}
+.custom--card .card-body {
+	padding: 35px;
+	@include breakpoint(max-sm) {
+		padding: 25px;
 	}
 	@include breakpoint(max-xs) {
 		padding: 15px;
 	}
-}
-
-.custom--card.card--md .card-header,
-.custom--card.card--md .card-footer {
-	padding: 10px 20px;
-}
-.custom--card.card--md .card-body {
-	padding: 20px 20px;
 }
