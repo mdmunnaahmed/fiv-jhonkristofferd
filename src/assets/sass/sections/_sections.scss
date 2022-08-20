@@ -1,0 +1,41 @@
+// Home Page Section
+.body-wrapper {
+	.body-wrapper-inner {
+		padding: 45px 50px;
+		@include breakpoint(max-md) {
+			padding: 30px;
+		}
+		@include breakpoint(max-sm) {
+			padding: 20px 15px;
+		}
+		&__left {
+			width: 45%;
+			z-index: 1;
+			&::before {
+				position: absolute;
+				content: "";
+				width: 2000px;
+				height: 2000px;
+				background-color: hsl(var(--white));
+				border-radius: 50%;
+				right: -50px;
+				top: 50%;
+				transform: translateY(-50%);
+				z-index: -1;
+				@include breakpoint(max-xxl) {
+					height: 1500px;
+					width: 1500px;
+				}
+			}
+		}
+		&__right {
+			width: calc(100% - 45%);
+			position: relative;
+			z-index: 2;
+			img {
+				margin-top: auto;
+			}
+		}
+	}
+}
+// Home Page Section
