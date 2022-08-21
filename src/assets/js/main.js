@@ -161,3 +161,7 @@ $(".sidebar-menu li a").each(function () {
 		$(this).addClass("active");
 	}
 });
+
+$(".remove-item").on("click", function () {
+	$(this).closest("tr").remove();
+});

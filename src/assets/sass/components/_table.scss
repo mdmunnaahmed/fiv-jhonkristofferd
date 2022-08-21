@@ -4,14 +4,14 @@
 	background-color: hsl(var(--white));
 	thead {
 		tr {
-			border-color: hsl(var(--light-900));
+			border-color: hsl(var(--dark));
 			th {
 				text-align: center;
 				font-size: 15px;
 				padding: 15px;
 				color: hsl(var(--body));
 				font-family: var(--heading-font);
-				font-weight: 500;
+				font-weight: 600;
 				&:first-child {
 					text-align: left;
 					border-radius: 5px 0 0 0;

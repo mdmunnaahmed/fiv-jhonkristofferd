@@ -94,6 +94,15 @@
 	}
 }
 
+.dropdown-hover:focus {
+	& ~ .dropdown-wrapper {
+		visibility: visible;
+		opacity: 1;
+		transform: scale(1);
+		transform: scale(1);
+	}
+}
+
 .notification-item {
 	@extend %flex;
 	justify-content: space-between;

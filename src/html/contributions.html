@@ -12,7 +12,7 @@
                     <div class="card-header pb-0">
                         <h4 class="title">Contributions</h4>
                         <ul class="nav-tabs nav filter mt-2">
-                            <li class="nav-item"><a href="#all-contributions" class="nav-link" data-bs-toggle="tab">All Contributions</a></li>
+                            <li class="nav-item"><a href="#all-contributions" class="nav-link active" data-bs-toggle="tab">All Contributions</a></li>
                             <li class="nav-item"><a href="#approved-contributions" class="nav-link" data-bs-toggle="tab">Approve Contributions</a></li>
                         </ul>
                     </div>
@@ -39,75 +39,348 @@
                                 </select>
                             </div>
                         </div>
-                        <table class="table table--responsive--xl">
-                            <thead>
-                                <tr>
-                                    <th>Original Language</th>
-                                    <th>Original Sentence</th>
-                                    <th>Translated Language</th>
-                                    <th>Translated Sentence</th>
-                                    <th>Contributor</th>
-                                    <th>Approved by</th>
-                                    <th>Date Approved</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td data-label="Original Language">Filipino</td>
-                                    <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
-                                    <td data-label="Translated Language">Cebuano</td>
-                                    <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
-                                    <td data-label="Contributor">JSmith1</td>
-                                    <td data-label="Approved by">Admin1</td>
-                                    <td data-label="Date Approved">@11-07-2022</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="Original Language">Filipino</td>
-                                    <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
-                                    <td data-label="Translated Language">Cebuano</td>
-                                    <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
-                                    <td data-label="Contributor">JSmith1</td>
-                                    <td data-label="Approved by">Admin1</td>
-                                    <td data-label="Date Approved">@11-07-2022</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="Original Language">Filipino</td>
-                                    <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
-                                    <td data-label="Translated Language">Cebuano</td>
-                                    <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
-                                    <td data-label="Contributor">JSmith1</td>
-                                    <td data-label="Approved by">Admin1</td>
-                                    <td data-label="Date Approved">@11-07-2022</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="Original Language">Filipino</td>
-                                    <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
-                                    <td data-label="Translated Language">Cebuano</td>
-                                    <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
-                                    <td data-label="Contributor">JSmith1</td>
-                                    <td data-label="Approved by">Admin1</td>
-                                    <td data-label="Date Approved">@11-07-2022</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="Original Language">Filipino</td>
-                                    <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
-                                    <td data-label="Translated Language">Cebuano</td>
-                                    <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
-                                    <td data-label="Contributor">JSmith1</td>
-                                    <td data-label="Approved by">Admin1</td>
-                                    <td data-label="Date Approved">@11-07-2022</td>
-                                </tr>
-                                <tr>
-                                    <td data-label="Original Language">Filipino</td>
-                                    <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
-                                    <td data-label="Translated Language">Cebuano</td>
-                                    <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
-                                    <td data-label="Contributor">JSmith1</td>
-                                    <td data-label="Approved by">Admin1</td>
-                                    <td data-label="Date Approved">@11-07-2022</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="tab-content">
+                            <div class="tab-pane show fade active" id="all-contributions">
+                                <table class="table table--responsive--xl">
+                                    <thead>
+                                        <tr>
+                                            <th>Original Language</th>
+                                            <th>Original Sentence</th>
+                                            <th>Translated Language</th>
+                                            <th>Translated Sentence</th>
+                                            <th>Contributor</th>
+                                            <th>Approved by</th>
+                                            <th>Date Approved</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Original Language">Filipino</td>
+                                            <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Translated Language">Cebuano</td>
+                                            <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Contributor">JSmith1</td>
+                                            <td data-label="Approved by">Admin1</td>
+                                            <td data-label="Date Approved">11-07-2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Original Language">Filipino</td>
+                                            <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Translated Language">Cebuano</td>
+                                            <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Contributor">JSmith1</td>
+                                            <td data-label="Approved by">Admin1</td>
+                                            <td data-label="Date Approved">11-07-2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Original Language">Filipino</td>
+                                            <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Translated Language">Cebuano</td>
+                                            <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Contributor">JSmith1</td>
+                                            <td data-label="Approved by">Admin1</td>
+                                            <td data-label="Date Approved">11-07-2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Original Language">Filipino</td>
+                                            <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Translated Language">Cebuano</td>
+                                            <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Contributor">JSmith1</td>
+                                            <td data-label="Approved by">Admin1</td>
+                                            <td data-label="Date Approved">11-07-2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Original Language">Filipino</td>
+                                            <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Translated Language">Cebuano</td>
+                                            <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Contributor">JSmith1</td>
+                                            <td data-label="Approved by">Admin1</td>
+                                            <td data-label="Date Approved">11-07-2022</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Original Language">Filipino</td>
+                                            <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Translated Language">Cebuano</td>
+                                            <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Contributor">JSmith1</td>
+                                            <td data-label="Approved by">Admin1</td>
+                                            <td data-label="Date Approved">11-07-2022</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="tab-pane fade" id="approved-contributions">
+                                <table class="table table--responsive--xl">
+                                    <thead>
+                                        <tr>
+                                            <th>Original Language</th>
+                                            <th>Original Sentence</th>
+                                            <th>Translated Language</th>
+                                            <th>Translated Sentence</th>
+                                            <th>Contributor</th>
+                                            <th>Score</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Original Language">Filipino</td>
+                                            <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Translated Language">Cebuano</td>
+                                            <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Contributor">
+                                                <div class="position-relative d-inline-block">
+                                                    <a href="javascript:void(0)" class="btn btn--md btn--base dropdown-hover">JSmith1 <i class="las la-angle-down"></i></a>
+                                                    <div class="dropdown-wrapper">
+                                                        <div class="dropdown-inner">
+                                                            <ul class="list list-simple">
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Education</span>
+                                                                    <span class="text-end">Secondary</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Spoken Language(s)</span>
+                                                                    <span class="text-end">Filipino, Cebuano</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Fluency</span>
+                                                                    <span class="text-end">Native</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-label="Approved by">15</td>
+                                            <td data-label="Date Approved">
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <a href="avascript:void(0)" class="btn btn--success btn--sm"><i class="fas fa-check"></i></a>
+                                                    <a href="avascript:void(0)" class="btn btn--danger btn--sm remove-item"><i class="fas fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Original Language">Filipino</td>
+                                            <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Translated Language">Cebuano</td>
+                                            <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Contributor">
+                                                <div class="position-relative d-inline-block">
+                                                    <a href="javascript:void(0)" class="btn btn--md btn--base dropdown-hover">JSmith1 <i class="las la-angle-down"></i></a>
+                                                    <div class="dropdown-wrapper">
+                                                        <div class="dropdown-inner">
+                                                            <ul class="list list-simple">
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Education</span>
+                                                                    <span class="text-end">Secondary</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Spoken Language(s)</span>
+                                                                    <span class="text-end">Filipino, Cebuano</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Fluency</span>
+                                                                    <span class="text-end">Native</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-label="Approved by">15</td>
+                                            <td data-label="Date Approved">
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <a href="avascript:void(0)" class="btn btn--success btn--sm"><i class="fas fa-check"></i></a>
+                                                    <a href="avascript:void(0)" class="btn btn--danger btn--sm remove-item"><i class="fas fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Original Language">Filipino</td>
+                                            <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Translated Language">Cebuano</td>
+                                            <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Contributor">
+                                                <div class="position-relative d-inline-block">
+                                                    <a href="javascript:void(0)" class="btn btn--md btn--base dropdown-hover">JSmith1 <i class="las la-angle-down"></i></a>
+                                                    <div class="dropdown-wrapper">
+                                                        <div class="dropdown-inner">
+                                                            <ul class="list list-simple">
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Education</span>
+                                                                    <span class="text-end">Secondary</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Spoken Language(s)</span>
+                                                                    <span class="text-end">Filipino, Cebuano</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Fluency</span>
+                                                                    <span class="text-end">Native</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-label="Approved by">15</td>
+                                            <td data-label="Date Approved">
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <a href="avascript:void(0)" class="btn btn--success btn--sm"><i class="fas fa-check"></i></a>
+                                                    <a href="avascript:void(0)" class="btn btn--danger btn--sm remove-item"><i class="fas fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Original Language">Filipino</td>
+                                            <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Translated Language">Cebuano</td>
+                                            <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Contributor">
+                                                <div class="position-relative d-inline-block">
+                                                    <a href="javascript:void(0)" class="btn btn--md btn--base dropdown-hover">JSmith1 <i class="las la-angle-down"></i></a>
+                                                    <div class="dropdown-wrapper">
+                                                        <div class="dropdown-inner">
+                                                            <ul class="list list-simple">
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Education</span>
+                                                                    <span class="text-end">Secondary</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Spoken Language(s)</span>
+                                                                    <span class="text-end">Filipino, Cebuano</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Fluency</span>
+                                                                    <span class="text-end">Native</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-label="Approved by">15</td>
+                                            <td data-label="Date Approved">
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <a href="avascript:void(0)" class="btn btn--success btn--sm"><i class="fas fa-check"></i></a>
+                                                    <a href="avascript:void(0)" class="btn btn--danger btn--sm remove-item"><i class="fas fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Original Language">Filipino</td>
+                                            <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Translated Language">Cebuano</td>
+                                            <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Contributor">
+                                                <div class="position-relative d-inline-block">
+                                                    <a href="javascript:void(0)" class="btn btn--md btn--base dropdown-hover">JSmith1 <i class="las la-angle-down"></i></a>
+                                                    <div class="dropdown-wrapper">
+                                                        <div class="dropdown-inner">
+                                                            <ul class="list list-simple">
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Education</span>
+                                                                    <span class="text-end">Secondary</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Spoken Language(s)</span>
+                                                                    <span class="text-end">Filipino, Cebuano</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Fluency</span>
+                                                                    <span class="text-end">Native</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-label="Approved by">15</td>
+                                            <td data-label="Date Approved">
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <a href="avascript:void(0)" class="btn btn--success btn--sm"><i class="fas fa-check"></i></a>
+                                                    <a href="avascript:void(0)" class="btn btn--danger btn--sm remove-item"><i class="fas fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Original Language">Filipino</td>
+                                            <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Translated Language">Cebuano</td>
+                                            <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Contributor">
+                                                <div class="position-relative d-inline-block">
+                                                    <a href="javascript:void(0)" class="btn btn--md btn--base dropdown-hover">JSmith1 <i class="las la-angle-down"></i></a>
+                                                    <div class="dropdown-wrapper">
+                                                        <div class="dropdown-inner">
+                                                            <ul class="list list-simple">
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Education</span>
+                                                                    <span class="text-end">Secondary</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Spoken Language(s)</span>
+                                                                    <span class="text-end">Filipino, Cebuano</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Fluency</span>
+                                                                    <span class="text-end">Native</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-label="Approved by">15</td>
+                                            <td data-label="Date Approved">
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <a href="avascript:void(0)" class="btn btn--success btn--sm"><i class="fas fa-check"></i></a>
+                                                    <a href="avascript:void(0)" class="btn btn--danger btn--sm remove-item"><i class="fas fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Original Language">Filipino</td>
+                                            <td data-label="Original Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Translated Language">Cebuano</td>
+                                            <td data-label="Translated Sentence">Lorem ipsum dolor sit amet</td>
+                                            <td data-label="Contributor">
+                                                <div class="position-relative d-inline-block">
+                                                    <a href="javascript:void(0)" class="btn btn--md btn--base dropdown-hover">JSmith1 <i class="las la-angle-down"></i></a>
+                                                    <div class="dropdown-wrapper">
+                                                        <div class="dropdown-inner">
+                                                            <ul class="list list-simple">
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Education</span>
+                                                                    <span class="text-end">Secondary</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Spoken Language(s)</span>
+                                                                    <span class="text-end">Filipino, Cebuano</span>
+                                                                </li>
+                                                                <li class="d-flex justify-content-between">
+                                                                    <span class="fw-semibold text-start">Fluency</span>
+                                                                    <span class="text-end">Native</span>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td data-label="Approved by">15</td>
+                                            <td data-label="Date Approved">
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <a href="avascript:void(0)" class="btn btn--success btn--sm"><i class="fas fa-check"></i></a>
+                                                    <a href="avascript:void(0)" class="btn btn--danger btn--sm remove-item"><i class="fas fa-times"></i></a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

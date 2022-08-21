@@ -3,6 +3,11 @@
 		@extend %flex;
 		flex-direction: column;
 	}
+	&.list-simple {
+		li {
+			padding: 5px 0;
+		}
+	}
 	&.list-style-check {
 		li {
 			position: relative;
