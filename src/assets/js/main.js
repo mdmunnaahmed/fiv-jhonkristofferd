@@ -6,13 +6,13 @@ $(window).on("load", function () {
 });
 
 // Menu Click Event
-let trigger = $(".header-trigger");
-let dropdown = $(".menu");
+let trigger = $(".sidebar-toggler");
+let dropdown = $(".sidebar-wrapper");
 if (trigger || dropdown) {
 	trigger.each(function () {
 		$(this).on("click", function (e) {
 			e.stopPropagation();
-			dropdown.slideToggle();
+			dropdown.toggleClass('active');
 			trigger.toggleClass("active");
 		});
 	});
@@ -22,8 +22,8 @@ if (trigger || dropdown) {
 		});
 	});
 	$(document).on("click", function () {
-		if (parseInt(screenSize) < parseInt(991)) {
-			dropdown.slideUp();
+		if (parseInt(screenSize) < parseInt(767)) {
+			dropdown.removeClass('active');
 			trigger.removeClass("active");
 		}
 	});
@@ -115,20 +115,6 @@ $(".brand-slider").slick({
 	],
 });
 
-// Odometer Counter
-let counter = $(".counter-item");
-if (counter) {
-	counter.each(function () {
-		$(this).isInViewport(function (status) {
-			if (status === "entered") {
-				for (var i = 0; i < document.querySelectorAll(".odometer").length; i++) {
-					var el = document.querySelectorAll(".odometer")[i];
-					el.innerHTML = el.getAttribute("data-odometer-final");
-				}
-			}
-		});
-	});
-}
 
 //Faq Click Event
 $(".faq-item__title").on("click", function (e) {
@@ -146,13 +132,6 @@ $(".faq-item__title").on("click", function (e) {
 	}
 });
 
-var videoItem = $(".video-pop");
-if (videoItem) {
-	videoItem.magnificPopup({
-		type: "iframe",
-	});
-}
-
 // Active Path Active
 var path = location.pathname.split("/");
 var current = location.pathname.split("/")[path.length - 1];
@@ -165,3 +144,15 @@ $(".sidebar-menu li a").each(function () {
 $(".remove-item").on("click", function () {
 	$(this).closest("tr").remove();
 });
+
+$(".nav-tabs li a").on("click", function () {
+	if ($("#languages").hasClass("active")) {
+		$(".addValidatorModal").removeClass("show-btn");
+		$(".addLanguageModal").addClass("show-btn");
+	} else if ($("#validators").hasClass("active")) {
+		$(".addLanguageModal").removeClass("show-btn");
+		$(".addValidatorModal").addClass("show-btn");
+	}
+});
+
+

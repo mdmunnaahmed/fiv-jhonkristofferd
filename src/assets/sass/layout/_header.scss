@@ -16,6 +16,26 @@
 		right: 15px;
 		top: 0;
 	}
+	&.style--two {
+		position: sticky;
+		top: 0;
+		width: 100%;
+		padding: 5px 35px;
+		background-color: hsl(var(--white));
+		@include breakpoint(max-sm) {
+			padding-inline: 25px;
+		}
+		&.sticky {
+			box-shadow: 0 3px 25px hsl(var(--dark)/.1);
+		}
+		.menu li a {
+			color: hsl(var(--body));
+			font-weight: 700;
+			&.active, &:hover {
+				color: hsl(var(--base))
+			}
+		}
+	}
 }
 .header-bottom-area {
 	@extend %flex;
@@ -72,7 +92,7 @@
 	li {
 		a {
 			color: hsl(var(--white));
-			font-family: var(--heading-font);
+			font-family: var(--body-font);
 			font-size: 25px;
 			&:hover, &.active {
 				color: hsl(var(--base));

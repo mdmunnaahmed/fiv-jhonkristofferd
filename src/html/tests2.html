@@ -1,0 +1,206 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+
+<!-- Main Content Wrapper -->
+<div class="main-body-wrapper d-flex">
+    @@include('../partial-html/_sidebar.html')
+    <div class="main-content">
+        <div class="main-content-inner">
+            @@include('../partial-html/_top-menu.html')
+            <div class="main-content-inner-inner">
+                <div class="card custom--card">
+                    <div class="card-header pb-0 d-flex flex-wrap gap-3 justify-content-between align-items-start">
+                        <div class="card-header__left">
+                            <h4 class="title"><a href="#0" onclick="history.back()" class="back-btn p-3 lh-1"><i class="fas fa-angle-left"></i></a> Filipino - Cebuano Test Questions</h4>
+                            <ul class="nav-tabs nav filter mt-2">
+                                <li class="nav-item"><a href="#all-tests" class="nav-link active" data-bs-toggle="tab">All Questions</a></li>
+                            </ul>
+                        </div>
+                        <button class="btn btn--success" data-bs-toggle="modal" data-bs-target="#addQuestionModal">Add Question</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex flex-wrap justify-content-between gap-3 mb-4">
+                            <div class="search-wrapper">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form--control ps-5">
+                                        <button class="btn fs--18px border-0 btn--icon" type="submit"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="d-flex flex-wrap gap-3">
+                                <select name="" id="" class="form-select form--control w-auto">
+                                    <option value="">Filter by</option>
+                                    <option value="">Upper to Low</option>
+                                    <option value="">Lower to Upper</option>
+                                </select>
+                                <select name="" id="" class="form-select form--control w-auto">
+                                    <option value="">Filter by</option>
+                                    <option value="">Upper to Low</option>
+                                    <option value="">Lower to Upper</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane show fade active" id="all-tests">
+                                <table class="table table--responsive--xl">
+                                    <thead>
+                                        <tr>
+                                            <th>Item Number</th>
+                                            <th>Question</th>
+                                            <th>Option 1</th>
+                                            <th>Option 2</th>
+                                            <th>Option 3</th>
+                                            <th>Option 4</th>
+                                            <th>Author</th>
+                                            <th>Edit</th>
+                                            <th>Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Item Number">01</td>
+                                            <td data-label="Question">Lorem ipsum dolor sit amet?</td>
+                                            <td data-label="Option 1">Lorem ipsum (1)</td>
+                                            <td data-label="Option 2">Lorem ipsum (2)</td>
+                                            <td data-label="Option 3">Lorem ipsum (3)</td>
+                                            <td data-label="Option 4">Lorem ipsum (4)</td>
+                                            <td data-label="Author">Admin1</td>
+                                            <td data-label="Edit"><button class="btn btn--warning btn--icon"><i class="fas fa-pen"></i></button></td>
+                                            <td data-label="Delete"><button class="btn btn--danger btn--icon remove-item"><i class="fas fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Item Number">01</td>
+                                            <td data-label="Question">Lorem ipsum dolor sit amet?</td>
+                                            <td data-label="Option 1">Lorem ipsum (1)</td>
+                                            <td data-label="Option 2">Lorem ipsum (2)</td>
+                                            <td data-label="Option 3">Lorem ipsum (3)</td>
+                                            <td data-label="Option 4">Lorem ipsum (4)</td>
+                                            <td data-label="Author">Admin1</td>
+                                            <td data-label="Edit"><button class="btn btn--warning btn--icon"><i class="fas fa-pen"></i></button></td>
+                                            <td data-label="Delete"><button class="btn btn--danger btn--icon remove-item"><i class="fas fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Item Number">01</td>
+                                            <td data-label="Question">Lorem ipsum dolor sit amet?</td>
+                                            <td data-label="Option 1">Lorem ipsum (1)</td>
+                                            <td data-label="Option 2">Lorem ipsum (2)</td>
+                                            <td data-label="Option 3">Lorem ipsum (3)</td>
+                                            <td data-label="Option 4">Lorem ipsum (4)</td>
+                                            <td data-label="Author">Admin1</td>
+                                            <td data-label="Edit"><button class="btn btn--warning btn--icon"><i class="fas fa-pen"></i></button></td>
+                                            <td data-label="Delete"><button class="btn btn--danger btn--icon remove-item"><i class="fas fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Item Number">01</td>
+                                            <td data-label="Question">Lorem ipsum dolor sit amet?</td>
+                                            <td data-label="Option 1">Lorem ipsum (1)</td>
+                                            <td data-label="Option 2">Lorem ipsum (2)</td>
+                                            <td data-label="Option 3">Lorem ipsum (3)</td>
+                                            <td data-label="Option 4">Lorem ipsum (4)</td>
+                                            <td data-label="Author">Admin1</td>
+                                            <td data-label="Edit"><button class="btn btn--warning btn--icon"><i class="fas fa-pen"></i></button></td>
+                                            <td data-label="Delete"><button class="btn btn--danger btn--icon remove-item"><i class="fas fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Item Number">01</td>
+                                            <td data-label="Question">Lorem ipsum dolor sit amet?</td>
+                                            <td data-label="Option 1">Lorem ipsum (1)</td>
+                                            <td data-label="Option 2">Lorem ipsum (2)</td>
+                                            <td data-label="Option 3">Lorem ipsum (3)</td>
+                                            <td data-label="Option 4">Lorem ipsum (4)</td>
+                                            <td data-label="Author">Admin1</td>
+                                            <td data-label="Edit"><button class="btn btn--warning btn--icon"><i class="fas fa-pen"></i></button></td>
+                                            <td data-label="Delete"><button class="btn btn--danger btn--icon remove-item"><i class="fas fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Item Number">01</td>
+                                            <td data-label="Question">Lorem ipsum dolor sit amet?</td>
+                                            <td data-label="Option 1">Lorem ipsum (1)</td>
+                                            <td data-label="Option 2">Lorem ipsum (2)</td>
+                                            <td data-label="Option 3">Lorem ipsum (3)</td>
+                                            <td data-label="Option 4">Lorem ipsum (4)</td>
+                                            <td data-label="Author">Admin1</td>
+                                            <td data-label="Edit"><button class="btn btn--warning btn--icon"><i class="fas fa-pen"></i></button></td>
+                                            <td data-label="Delete"><button class="btn btn--danger btn--icon remove-item"><i class="fas fa-trash"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main Content Wrapper -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="addQuestionModal" tabindex="-1" aria-labelledby="addQuestionModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content border-0">
+            <div class="modal-body">
+                <form action="">
+                    <h4 class="title mb-4 pb-lg-2">Add Test Question</h4>
+                    <div class="row gy-3 gx-xl-5">
+                        <div class="col-12">
+                            <textarea name="" id="" cols="30" rows="10" class="form-control form--control" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row gy-3 gx-3 gx-xl-5">
+                                <div class="col-8">
+                                    <input type="text" class="form-control form--control" placeholder="Option 1">
+                                </div>
+                                <div class="col-4">
+                                    <input type="text" class="form-control form--control" placeholder="Point(s)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row gy-3 gx-3 gx-xl-5">
+                                <div class="col-8">
+                                    <input type="text" class="form-control form--control" placeholder="Option 1">
+                                </div>
+                                <div class="col-4">
+                                    <input type="text" class="form-control form--control" placeholder="Point(s)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row gy-3 gx-3 gx-xl-5">
+                                <div class="col-8">
+                                    <input type="text" class="form-control form--control" placeholder="Option 1">
+                                </div>
+                                <div class="col-4">
+                                    <input type="text" class="form-control form--control" placeholder="Point(s)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="row gy-3 gx-3 gx-xl-5">
+                                <div class="col-8">
+                                    <input type="text" class="form-control form--control" placeholder="Option 1">
+                                </div>
+                                <div class="col-4">
+                                    <input type="text" class="form-control form--control" placeholder="Point(s)">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap justify-content-between mt-4">
+                            <button type="button" class="btn btn--primary">Active</button>
+                            <button type="submit" class="btn btn--success">Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>

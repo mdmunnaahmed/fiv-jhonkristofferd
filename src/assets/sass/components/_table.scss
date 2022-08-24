@@ -11,7 +11,7 @@
 				padding: 15px;
 				color: hsl(var(--body));
 				font-family: var(--heading-font);
-				font-weight: 600;
+				font-weight: 700;
 				&:first-child {
 					text-align: left;
 					border-radius: 5px 0 0 0;
@@ -29,7 +29,7 @@
 			td {
 				text-align: center;
 				vertical-align: middle;
-				padding: 20px 15px;
+				padding: 15px;
 				border-width: 1px;
 				font-family: var(--heading-font);
 				&::before {
@@ -47,7 +47,7 @@
 					text-align: right;
 				}
 			}
-			&:nth-child(even) {
+			&:nth-child(odd) {
 				background: hsl(var(--light));
 			}
 		}
@@ -56,6 +56,11 @@
 		span {
 			margin-right: 4px;
 		}
+	}
+}
+td[data-label="Description"] {
+	span {
+		max-width: 500px;
 	}
 }
 

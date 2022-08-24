@@ -7,6 +7,11 @@
 	@extend %transition;
 	border-radius: 12px;
 	z-index: 1;
+	text-align: center;
+	
+	@include breakpoint(lg) {
+		min-width: 175px;
+	}
 	&.btn--lg {
 		padding: 13px 35px !important;
 		font-size: 18px;
@@ -26,6 +31,12 @@
 		padding: 0px 10px !important;
 		font-size: 13px;
 	}
+}
+
+.btn--icon {
+	padding: 4px 15px;
+	font-size: 18px;
+	min-width: unset;
 }
 
 $colors: "primary" hsl(var(--primary)), "secondary" hsl(var(--secondary)), "success" hsl(var(--success)), "danger" hsl(var(--danger)), "warning" hsl(var(--warning)), "info" var(--info), "light" hsl(var(--light)), "dark" hsl(var(--dark)),

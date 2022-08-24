@@ -1,0 +1,282 @@
+<!-- meta tags and other links -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dapok Web - Dapok</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" sizes="16x16">
+    <!-- bootstrap 5  -->
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.min.css">
+    <!-- Icon Link  -->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/line-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+
+    <!-- Plugin Link -->
+    <link rel="stylesheet" href="assets/css/lib/slick.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <!-- Overlay -->
+    <div class="overlay"></div>
+    <a href="javascript::void(0)" class="scrollToTop"><i class="las la-chevron-up"></i></a>
+
+<!-- Main Content Wrapper -->
+<div class="main-body-wrapper d-flex">
+    <!-- Sidebar Starts -->
+<div class="sidebar-wrapper bg--accent">
+    <div class="sidebar-inner">
+        <ul class="sidebar-menu">
+            <li class="sidebar-menu-item"><a href="contributions.html" class="sidebar-menu-link"><img src="assets/images/icon/menu1.png" alt="icon"></a></li>
+            <li class="sidebar-menu-item"><a href="tests.html" class="sidebar-menu-link"><img src="assets/images/icon/menu2.png" alt="icon"></a></li>
+            <li class="sidebar-menu-item"><a href="domain.html" class="sidebar-menu-link"><img src="assets/images/icon/menu3.png" alt="icon"></a></li>
+            <li class="sidebar-menu-item"><a href="visualization.html" class="sidebar-menu-link"><img src="assets/images/icon/menu4.png" alt="icon"></a></li>
+            <li class="sidebar-menu-item"><a href="lists.html" class="sidebar-menu-link"><img src="assets/images/icon/menu5.png" alt="icon"></a></li>
+        </ul>
+    </div>
+</div>
+<!-- Sidebar Ends -->
+    <div class="main-content">
+        <div class="main-content-inner">
+            <!-- Top Menu Starts -->
+<div class="top-menu-wrapper bg-white">
+    <div class="top-menu-inner d-flex flex-wrap gap-2 justify-content-between">
+        <div class="d-sm-block">
+            <div class="sidebar-toggler fs--20px d-md-none"><i class="fas fa-bars"></i></div>
+        </div>
+        <a href="contributions.htmll" class="logo"><img src="assets/images/logo.png" alt="logo"></a>
+        <ul class="top-menu d-flex flex-wrap gap-3">
+            <li class="top-menu-item">
+                <a href="javascript:void(0)" class="top-menu-link"><i class="fas fa-bell"></i></a>
+                <div class="dropdown-wrapper">
+                    <div class="dropdown-inner">
+                        <div class="dropdown-header">
+                            <div class="d-flex flex-wrap justify-content-between pb-2">
+                                <h6>Notifications</h6>
+                                <span>Mark all as read</span>
+                            </div>
+                            <ul class="notification">
+                                <li class="notification-item">
+                                    <div class="d-flex gap-3">
+                                        <div class="notification-item__thumb">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="notification-item__content">
+                                            <h6 class="notification-item__content-name">JSmith1</h6>
+                                            <p>has contributed</p>
+                                        </div>
+                                    </div>
+                                    <p class="fs--12px">1 min ago</p>
+                                </li>
+                                <li class="notification-item">
+                                    <div class="d-flex gap-3">
+                                        <div class="notification-item__thumb">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="notification-item__content">
+                                            <h6 class="notification-item__content-name">JSmith1</h6>
+                                            <p>has contributed</p>
+                                        </div>
+                                    </div>
+                                    <p class="fs--12px">1 min ago</p>
+                                </li>
+                                <li class="notification-item">
+                                    <div class="d-flex gap-3">
+                                        <div class="notification-item__thumb">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="notification-item__content">
+                                            <h6 class="notification-item__content-name">JSmith1</h6>
+                                            <p>has contributed</p>
+                                        </div>
+                                    </div>
+                                    <p class="fs--12px">1 min ago</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="top-menu-item">
+                <a href="javascript:void(0)" class="top-menu-link"><i class="fas fa-user"></i></a>
+                <div class="dropdown-wrapper">
+                    <div class="dropdown-inner">
+                        <ul class="notification">
+                            <li class="notification-item border-0">
+                                <div class="d-flex gap-3">
+                                    <div class="notification-item__thumb">
+                                        <i class="fas fa-user"></i>
+                                    </div>
+                                    <div class="notification-item__content">
+                                        <h6 class="notification-item__content-name">JSmith1</h6>
+                                        <p>has contributed</p>
+                                        <a href="" class="mt-3 d-block fs--14px fw-semibold">Edit Profile</a>
+                                        <a href="" class="mt-1 d-block fs--14px fw-semibold text--danger">Log Out</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- Top Menu Ends -->
+            <div class="main-content-inner-inner">
+                <div class="card custom--card">
+                    <div class="card-header pb-0 d-flex flex-wrap gap-3 justify-content-between align-items-start">
+                        <div class="card-header__left">
+                            <h4 class="title">Domains</h4>
+                            <ul class="nav-tabs nav filter mt-2">
+                                <li class="nav-item"><a href="#all-domains" class="nav-link active" data-bs-toggle="tab">All Domains</a></li>
+                            </ul>
+                        </div>
+                        <button class="btn btn--success" data-bs-toggle="modal" data-bs-target="#addDomainModal">Add Domain</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="d-flex flex-wrap justify-content-between gap-3 mb-4">
+                            <div class="search-wrapper">
+                                <form action="">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control form--control ps-5">
+                                        <button class="btn fs--18px border-0 btn--icon" type="submit"><i class="fas fa-search"></i></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="d-flex flex-wrap gap-3">
+                                <select name="" id="" class="form-select form--control w-auto">
+                                    <option value="">Filter by</option>
+                                    <option value="">Upper to Low</option>
+                                    <option value="">Lower to Upper</option>
+                                </select>
+                                <select name="" id="" class="form-select form--control w-auto">
+                                    <option value="">Filter by</option>
+                                    <option value="">Upper to Low</option>
+                                    <option value="">Lower to Upper</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane show fade active" id="all-tests">
+                                <table class="table table--responsive--xl">
+                                    <thead>
+                                        <tr>
+                                            <th>Domain Name</th>
+                                            <th>Description</th>
+                                            <th>Staff</th>
+                                            <th>View Repository</th>
+                                            <th>Edit</th>
+                                            <th>Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-label="Domain Name">Filipino.net</td>
+                                            <td data-label="Description"><span class="text-xl-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</span></td>
+                                            <td data-label="Staff">Admin1</td>
+                                            <td data-label="View Repository"><a href="repository.html" class="btn btn--primary btn--icon"><i class="fas fa-search"></i></a></td>
+                                            <td data-label="Edit"><button class="btn btn--warning btn--icon"><i class="fas fa-pen"></i></button></td>
+                                            <td data-label="Delete"><button class="btn btn--danger btn--icon remove-item"><i class="fas fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Domain Name">Filipino.net</td>
+                                            <td data-label="Description"><span class="text-xl-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</span></td>
+                                            <td data-label="Staff">Admin1</td>
+                                            <td data-label="View Repository"><a href="repository.html" class="btn btn--primary btn--icon"><i class="fas fa-search"></i></a></td>
+                                            <td data-label="Edit"><button class="btn btn--warning btn--icon"><i class="fas fa-pen"></i></button></td>
+                                            <td data-label="Delete"><button class="btn btn--danger btn--icon remove-item"><i class="fas fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Domain Name">Filipino.net</td>
+                                            <td data-label="Description"><span class="text-xl-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</span></td>
+                                            <td data-label="Staff">Admin1</td>
+                                            <td data-label="View Repository"><a href="repository.html" class="btn btn--primary btn--icon"><i class="fas fa-search"></i></a></td>
+                                            <td data-label="Edit"><button class="btn btn--warning btn--icon"><i class="fas fa-pen"></i></button></td>
+                                            <td data-label="Delete"><button class="btn btn--danger btn--icon remove-item"><i class="fas fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Domain Name">Filipino.net</td>
+                                            <td data-label="Description"><span class="text-xl-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</span></td>
+                                            <td data-label="Staff">Admin1</td>
+                                            <td data-label="View Repository"><a href="repository.html" class="btn btn--primary btn--icon"><i class="fas fa-search"></i></a></td>
+                                            <td data-label="Edit"><button class="btn btn--warning btn--icon"><i class="fas fa-pen"></i></button></td>
+                                            <td data-label="Delete"><button class="btn btn--danger btn--icon remove-item"><i class="fas fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Domain Name">Filipino.net</td>
+                                            <td data-label="Description"><span class="text-xl-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</span></td>
+                                            <td data-label="Staff">Admin1</td>
+                                            <td data-label="View Repository"><a href="repository.html" class="btn btn--primary btn--icon"><i class="fas fa-search"></i></a></td>
+                                            <td data-label="Edit"><button class="btn btn--warning btn--icon"><i class="fas fa-pen"></i></button></td>
+                                            <td data-label="Delete"><button class="btn btn--danger btn--icon remove-item"><i class="fas fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Domain Name">Filipino.net</td>
+                                            <td data-label="Description"><span class="text-xl-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</span></td>
+                                            <td data-label="Staff">Admin1</td>
+                                            <td data-label="View Repository"><a href="repository.html" class="btn btn--primary btn--icon"><i class="fas fa-search"></i></a></td>
+                                            <td data-label="Edit"><button class="btn btn--warning btn--icon"><i class="fas fa-pen"></i></button></td>
+                                            <td data-label="Delete"><button class="btn btn--danger btn--icon remove-item"><i class="fas fa-trash"></i></button></td>
+                                        </tr>
+                                        <tr>
+                                            <td data-label="Domain Name">Filipino.net</td>
+                                            <td data-label="Description"><span class="text-xl-start">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua?</span></td>
+                                            <td data-label="Staff">Admin1</td>
+                                            <td data-label="View Repository"><a href="repository.html" class="btn btn--primary btn--icon"><i class="fas fa-search"></i></a></td>
+                                            <td data-label="Edit"><button class="btn btn--warning btn--icon"><i class="fas fa-pen"></i></button></td>
+                                            <td data-label="Delete"><button class="btn btn--danger btn--icon remove-item"><i class="fas fa-trash"></i></button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main Content Wrapper -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="addDomainModal" tabindex="-1" aria-labelledby="addDomainModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content border-0">
+            <div class="modal-body">
+                <form action="">
+                    <h4 class="title mb-4 pb-lg-2">Add Domain</h4>
+                    <input type="text" class="form-control form--control mb-3" placeholder="Domain Name">
+                    <textarea name="" id="" cols="30" rows="10" class="form-control form--control" placeholder="Description"></textarea>
+                    <div class="d-flex flex-wrap justify-content-end mt-4">
+                        <button type="submit" class="btn btn--success">Add</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- jQuery library -->
+<script src="assets/js/lib/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap 5 js -->
+<script src="assets/js/lib/bootstrap.min.js"></script>
+
+<!-- Pluglin Link -->
+<script src="assets/js/lib/slick.min.js"></script>
+<script src="assets/js/lib/apexchart.js"></script>
+
+<!-- Main js -->
+<script src="assets/js/main.js"></script>
+</body>
+
+</html>

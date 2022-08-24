@@ -1,0 +1,202 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+
+<!-- Main Content Wrapper -->
+<div class="main-body-wrapper d-flex">
+    @@include('../partial-html/_sidebar.html')
+    <div class="main-content">
+        <div class="main-content-inner">
+            @@include('../partial-html/_top-menu.html')
+            <div class="main-content-inner-inner">
+                <div class="card custom--card">
+                    <div class="card-header d-flex flex-wrap gap-3 justify-content-between align-items-start">
+                        <div class="card-header__left">
+                            <h4 class="title">Visualization</h4>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="row gy-4">
+                            <div class="col-xl-8 col-xxl-9 pe-xxl-5">
+                                <div class="d-flex flex-wrap justify-content-between gap-3 mb-4">
+                                    <div class="search-wrapper">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control form--control ps-5">
+                                                <button class="btn fs--18px border-0 btn--icon" type="submit"><i class="fas fa-search"></i></button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="d-flex flex-wrap gap-3">
+                                        <select name="" id="" class="form-select form--control w-auto">
+                                            <option value="">Filter by</option>
+                                            <option value="">Upper to Low</option>
+                                            <option value="">Lower to Upper</option>
+                                        </select>
+                                        <select name="" id="" class="form-select form--control w-auto">
+                                            <option value="">Filter by</option>
+                                            <option value="">Upper to Low</option>
+                                            <option value="">Lower to Upper</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="overview-wrapper d-flex flex-wrap justify-content-between">
+                                    <div class="overall-item flex-column style--two">
+                                        <div class="overall-item__icon">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="overall-item__content">
+                                            <p>Users</p>
+                                            <h4 class="value">500</h4>
+                                            <p>Per Day</p>
+                                        </div>
+                                    </div>
+                                    <div class="overall-item flex-column style--two">
+                                        <div class="overall-item__icon">
+                                            <i class="fas fa-eye"></i>
+                                        </div>
+                                        <div class="overall-item__content">
+                                            <p>Views</p>
+                                            <h4 class="value">2.5k</h4>
+                                            <p>Per Day</p>
+                                        </div>
+                                    </div>
+                                    <div class="overall-item flex-column style--two">
+                                        <div class="overall-item__icon">
+                                            <i class="fas fa-compass"></i>
+                                        </div>
+                                        <div class="overall-item__content">
+                                            <p>Visits</p>
+                                            <h4 class="value">3.0</h4>
+                                            <p>Per Day</p>
+                                        </div>
+                                    </div>
+                                    <div class="overall-item flex-column style--two">
+                                        <div class="overall-item__icon">
+                                            <i class="fas fa-file-alt"></i>
+                                        </div>
+                                        <div class="overall-item__content">
+                                            <p>Contributions</p>
+                                            <h4 class="value">1.0k</h4>
+                                            <p>Per Day</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="overview-wrapper style--two mt-4">
+                                    <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 mb-sm-4">
+                                        <h4 class="title ps-3">Users</h4>
+                                        <p class="fw-medium mb-0">Past 7 days</p>
+                                    </div>
+                                    <div id="apex-bar-chart"> </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-4 col-xxl-3">
+                                <div class="overall-wrapper">
+                                    <h3 class="title text-white mb-4">Overall Statistics</h3>
+                                    <div class="overall-item">
+                                        <div class="overall-item__icon">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                        <div class="overall-item__content">
+                                            <h4 class="value text-white">500</h4>
+                                            <p class="text-white fs--14px">Users</p>
+                                        </div>
+                                    </div>
+                                    <div class="overall-item">
+                                        <div class="overall-item__icon">
+                                            <i class="fas fa-eye"></i>
+                                        </div>
+                                        <div class="overall-item__content">
+                                            <h4 class="value text-white">2.5k</h4>
+                                            <p class="text-white fs--14px">Views</p>
+                                        </div>
+                                    </div>
+                                    <div class="overall-item">
+                                        <div class="overall-item__icon">
+                                            <i class="fas fa-compass"></i>
+                                        </div>
+                                        <div class="overall-item__content">
+                                            <h4 class="value text-white">3.0</h4>
+                                            <p class="text-white fs--14px">Visits</p>
+                                        </div>
+                                    </div>
+                                    <div class="overall-item">
+                                        <div class="overall-item__icon">
+                                            <i class="fas fa-file-alt"></i>
+                                        </div>
+                                        <div class="overall-item__content">
+                                            <h4 class="value text-white">1.0k</h4>
+                                            <p class="text-white fs--14px">Contributions</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main Content Wrapper -->
+
+
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
+
+<script>
+    // apex-bar-chart js 
+    var options = {
+        series: [{
+            name: 'Users',
+            data: [76, 85, 101, 98, 87, 105, 91]
+        }],
+        chart: {
+            type: 'bar',
+            height: 450,
+            toolbar: {
+                show: false
+            },
+        },
+        grid: {
+            borderColor: "#00CA8099",
+        },
+        plotOptions: {
+            bar: {
+                horizontal: false,
+                columnWidth: '30%',
+                // endingShape: 'rounded'
+            },
+        },
+        dataLabels: {
+            enabled: false
+        },
+        stroke: {
+            show: true,
+            width: 2,
+            colors: ['transparent']
+        },
+        xaxis: {
+            categories: ['Feb 1', 'Feb 2', 'Feb 3', 'Feb 4', 'Feb 5', 'Feb 6', 'Feb 7'],
+
+        },
+        fill: {
+            opacity: 1,
+            colors: ['#00CA80']
+
+        },
+        tooltip: {
+            y: {
+                formatter: function (val) {
+                    return val
+                }
+            }
+        }
+    };
+
+    var chart = new ApexCharts(document.querySelector("#apex-bar-chart"), options);
+    chart.render();
+
+</script>
+</body>
+
+</html>

@@ -11,6 +11,9 @@
 		&__left {
 			width: 45%;
 			z-index: 1;
+			@include breakpoint(max-lg) {
+				width: 100%;
+			}
 			&::before {
 				position: absolute;
 				content: "";
@@ -26,12 +29,18 @@
 					height: 1500px;
 					width: 1500px;
 				}
+				@include breakpoint(max-lg) {
+					right: -100px;
+				}
 			}
 		}
 		&__right {
 			width: calc(100% - 45%);
 			position: relative;
 			z-index: 2;
+			@include breakpoint(max-lg) {
+				width: 100%;
+			}
 			img {
 				margin-top: auto;
 			}
@@ -40,10 +49,15 @@
 }
 // Home Page Section
 
-
 // After Login Sections
 .filter {
 	gap: 10px 40px;
+	@include breakpoint(max-md) {
+		gap: 10px 30px;
+	}
+	@include breakpoint(max-sm) {
+		gap: 10px;
+	}
 	li {
 		a {
 			padding: 10px 0;
@@ -65,17 +79,250 @@
 		}
 	}
 }
+.form-select {
+	height: 40px;
+}
+.two-buttons {
+	display: none;
+	&.show-btn {
+		display: block;
+	}
+}
 .search-wrapper {
 	.form-group {
 		position: relative;
+		.form--control {
+			height: 40px;
+		}
 		.btn {
 			position: absolute;
 			top: 0;
 			bottom: 0;
 			left: 0;
 			padding: 10px 15px;
-			
+			line-height: 1;
 		}
 	}
 }
 // After Login Sections
+
+// User Sections
+.user-item {
+	&__thumb {
+		width: 140px;
+		height: 140px;
+		@include breakpoint(max-sm) {
+			width: 100px;
+			height: 100px;
+		}
+		img {
+			border-radius: 50%;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+}
+.user-level {
+	text-align: center;
+	.level {
+		width: 55px;
+		height: 55px;
+		border-radius: 50%;
+		color: hsl(var(--white));
+		background-color: hsl(var(--accent));
+		display: grid;
+		place-items: center;
+		margin-inline: auto;
+	}
+	.text {
+		line-height: 1;
+		padding: 2px 18px;
+		background: hsl(var(--primary));
+		font-size: 11px;
+		font-weight: 700;
+		border-radius: 15px;
+		color: hsl(var(--white));
+		transform: translateY(-15px);
+	}
+}
+// User Sections
+
+// Visualization Sections
+.overview-wrapper {
+	padding: 30px 40px;
+	background-color: hsl(var(--base) / 0.35);
+	border-radius: 25px;
+	gap: 40px;
+	@include breakpoint(max-sm) {
+		padding: 25px;
+		gap: 40px 25px;
+	}
+	&.style--two {
+		background-color: hsl(var(--success) / 0.25);
+		@include breakpoint(max-sm) {
+			padding: 15px;
+			padding-left: 0;
+		}
+	}
+}
+.overall-wrapper {
+	background-color: hsl(var(--accent));
+	border-radius: 25px;
+	padding: 35px 25px;
+}
+.overall-item {
+	@extend %flex;
+	&:not(:last-child) {
+		margin-bottom: 32px;
+	}
+	&__icon {
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		display: grid;
+		place-items: center;
+		font-size: 35px;
+		color: hsl(var(--white));
+		background: hsl(var(--base));
+		margin-top: 10px;
+	}
+	&__content {
+		padding-left: 24px;
+		.value {
+			font-size: 35px;
+		}
+		p {
+			font-weight: 500;
+			margin-bottom: 0;
+		}
+	}
+	&.style--two {
+		margin-bottom: 0;
+		@include max(700px) {
+			width: 45%;
+		}
+		.overall-item__icon {
+			margin-top: 0;
+			margin-bottom: 30px;
+			background-color: hsl(var(--accent));
+			@include breakpoint(max-lg) {
+				margin-bottom: 24px;
+			}
+			@include breakpoint(max-sm) {
+				margin-bottom: 15px;
+			}
+		}
+		.overall-item__content {
+			padding-left: 0;
+			.value {
+				font-size: 50px;
+				margin: 10px 0;
+				@include breakpoint(max-lg) {
+					font-size: 42px;
+				}
+				@include max(800px) {
+					font-size: 36px;
+				}
+				@include breakpoint(max-sm) {
+					margin: 5px 0;
+				}
+			}
+		}
+	}
+}
+// Visualization Sections
+
+// Faq Section
+.faq-page-body-wrapper {
+	&::before {
+		top: 70% !important;
+		right: -200px !important;
+		@include breakpoint(max-lg) {
+			right: -300px !important;
+		}
+		@include breakpoint(max-md) {
+			right: -500px !important;
+		}
+	}
+}
+.faq-item {
+	padding: 25px 0;
+	&:not(:last-child) {
+		border-bottom: 1px solid hsl(var(--base));
+	}
+	&__title {
+		cursor: pointer;
+		position: relative;
+		padding-right: 30px;
+		&::before {
+			@extend %font-ico;
+			content: "\f13a";
+			width: 25px;
+			height: 25px;
+			font-size: 25px;
+			color: hsl(var(--body));
+			right: 0;
+			top: 3px;
+			line-height: 1;
+			@extend %transition;
+		}
+		.title {
+			font-family: var(--body-font);
+			@include breakpoint(max-xl) {
+				font-size: 22px;
+			}
+			@include breakpoint(max-md) {
+				font-size: 20px;
+			}
+		}
+	}
+	&__content {
+		display: none;
+		font-size: 20px;
+		@include breakpoint(max-xxl) {
+			font-size: 18px;
+		}
+		p {
+			padding: 15px 0;
+		}
+	}
+	&.active {
+		.faq-item__content {
+			display: block;
+		}
+	}
+	&.open {
+		.faq-item__title {
+			&::before {
+				transform: rotate(-180deg);
+			}
+		}
+	}
+}
+// Faq Section
+
+
+// Section
+.about-content {
+	p {
+		text-align: justify;
+	}
+}
+.section-title {
+	font-size: 75px;
+	margin-bottom: 30px;
+	@include breakpoint(max-xxl) {
+		font-size: 60px;
+	}
+	@include breakpoint(max-xl) {
+		font-size: 50px;
+	}
+	@include breakpoint(max-md) {
+		font-size: 40px;
+	}
+	@include breakpoint(max-sm) {
+		font-size: 30px;
+	}
+}
+// Section

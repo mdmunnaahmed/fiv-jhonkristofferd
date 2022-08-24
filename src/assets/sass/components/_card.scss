@@ -17,6 +17,19 @@
 		padding: 15px;
 	}
 }
+.custom--card.card--md .card-header,
+.custom--card.card--md .card-footer {
+	padding: 25px;
+	.title {
+		margin: 0;
+	}
+	@include breakpoint(max-md) {
+		padding: 20px;
+	}
+	@include breakpoint(max-sm) {
+		padding: 15px;
+	}
+}
 .custom--card .card-header {
 	border-radius: 10px 10px 0 0;
 	box-shadow: 0 2px 3px #d0cde180;
@@ -28,6 +41,15 @@
 	padding: 35px;
 	@include breakpoint(max-sm) {
 		padding: 25px;
+	}
+	@include breakpoint(max-xs) {
+		padding: 15px;
+	}
+}
+.custom--card.card--md .card-body {
+	padding: 25px;
+	@include breakpoint(max-sm) {
+		padding: 20px;
 	}
 	@include breakpoint(max-xs) {
 		padding: 15px;
