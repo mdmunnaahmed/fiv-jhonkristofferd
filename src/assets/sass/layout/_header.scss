@@ -26,13 +26,23 @@
 			padding-inline: 25px;
 		}
 		&.sticky {
-			box-shadow: 0 3px 25px hsl(var(--dark)/.1);
+			box-shadow: 0 3px 25px hsl(var(--dark) / 0.1);
 		}
 		.menu li a {
 			color: hsl(var(--body));
 			font-weight: 700;
-			&.active, &:hover {
-				color: hsl(var(--base))
+			@include breakpoint(max-lg) {
+				color: hsl(var(--white));
+			}
+			&.active,
+			&:hover {
+				color: hsl(var(--base));
+			}
+		}
+		@include breakpoint(max-lg) {
+			.bg--accent {
+				color: hsl(var(--base)) !important;
+				background-color: hsl(var(--white)) !important;
 			}
 		}
 	}
@@ -94,7 +104,8 @@
 			color: hsl(var(--white));
 			font-family: var(--body-font);
 			font-size: 25px;
-			&:hover, &.active {
+			&:hover,
+			&.active {
 				color: hsl(var(--base));
 			}
 			@include breakpoint(max-md) {

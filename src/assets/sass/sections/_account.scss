@@ -1,5 +1,5 @@
 .modal-content {
-    border-radius: 25px;
+	border-radius: 25px;
 }
 .account-wrapper {
 	border-radius: 25px;
@@ -42,7 +42,7 @@
 		padding: 50px 60px;
 		@include breakpoint(max-xl) {
 			width: calc(100% - 350px);
-            padding: 40px;
+			padding: 40px;
 		}
 		@include breakpoint(max-lg) {
 			width: 100%;
@@ -52,4 +52,7 @@
 			padding: 25px;
 		}
 	}
+}
+.tab {
+	display: none;
 }

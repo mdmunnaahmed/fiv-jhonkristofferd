@@ -101,6 +101,105 @@
 </div>
 <!-- About Section -->
 
+
+<!-- Team Section -->
+<div class="team-section pt-5 pb-80">
+    <div class="team-bg">
+        <img src="assets/images/thumb/team-bg.png" alt="thumb">
+    </div>
+    <div class="container">
+        <h2 class="section-title text-center text-white">Our Team</h2>
+        <div class="row gy-4">
+            <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
+                <div class="team-item">
+                    <div class="team-item__thumb">
+                        <img src="assets/images/thumb/team-thumb.png" alt="thumb">
+                    </div>
+                    <div class="team-item__content">
+                        <h3 class="team-item__content-name text--base">Jane Smith</h3>
+                        <p class="team-item__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <h5 class="designation text--base">Project Manager</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
+                <div class="team-item">
+                    <div class="team-item__thumb">
+                        <img src="assets/images/thumb/team-thumb.png" alt="thumb">
+                    </div>
+                    <div class="team-item__content">
+                        <h3 class="team-item__content-name text--base">Jane Smith</h3>
+                        <p class="team-item__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <h5 class="designation text--base">Programmer</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
+                <div class="team-item">
+                    <div class="team-item__thumb">
+                        <img src="assets/images/thumb/team-thumb.png" alt="thumb">
+                    </div>
+                    <div class="team-item__content">
+                        <h3 class="team-item__content-name text--base">Jane Smith</h3>
+                        <p class="team-item__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <h5 class="designation text--base">Programmer</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xl-3 col-md-6 col-sm-6">
+                <div class="team-item">
+                    <div class="team-item__thumb">
+                        <img src="assets/images/thumb/team-thumb.png" alt="thumb">
+                    </div>
+                    <div class="team-item__content">
+                        <h3 class="team-item__content-name text--base">Jane Smith</h3>
+                        <p class="team-item__content-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        <h5 class="designation text--base">Programmer</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team Section -->
+
+
+<!-- Contact Section -->
+<div class="contact-section pt-60 pb-80">
+    <div class="contact-bg">
+        <img src="assets/images/thumb/team-bg.png" alt="thumb">
+    </div>
+    <div class="container">
+        <h2 class="section-title mb-1 text-center text-white">Contact Us</h2>
+        <p class="contact-title-text  text-center text-white pb-60">If you have any questions about the project, You can contact us:</p>
+        <div class="row gy-4 justify-content-evenly">
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6 mb-5 mb-sm-0">
+                <div class="contact-item">
+                    <div class="contact-item__icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-item__content">
+                        <h5 class="contact-item__content-title">Email Us</h5>
+                        <a href="mailto:dapok@uic.edu.ph" class="text-decoration-underline">dapok@uic.edu.ph</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-5 col-sm-6">
+                <div class="contact-item">
+                    <div class="contact-item__icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-item__content">
+                        <h5 class="contact-item__content-title">Visit Us</h5>
+                        <p class="mb-0">University of the Immaculate Conception. Father Selga St., Davao City</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Section -->
+
 <!-- Home Page Section -->
 <!-- Modal -->
 <div class="modal fade" id="accountModal" tabindex="-1" aria-labelledby="accountModal" aria-hidden="true">
@@ -156,49 +255,91 @@
                         </div>
                     </div>
                     <div class="account-wrapper__right">
-                        <form action="">
-                            <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="form-group mb-3">
-                                        <label class="form-label" for="">First Name</label>
-                                        <input type="text" class="form-control form--control">
+                        <form id="regForm" action="">
+                            <div class="tab">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label" for="">First Name</label>
+                                            <input type="text" class="form-control form--control">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label" for="">Last Name</label>
+                                            <input type="text" class="form-control form--control">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label" for="">Username</label>
+                                            <input type="text" class="form-control form--control">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label" for="">Email</label>
+                                            <input type="email" class="form-control form--control">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label" for="">Password</label>
+                                            <input type="password" class="form-control form--control">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label" for="">Confirm Password</label>
+                                            <input type="password" class="form-control form--control">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="text-center mt-3 mt-sm-4">
+                                            <button type="button" class="btn btn--accent" onclick="nextPrev(1)">Next</button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
-                                    <div class="form-group mb-3">
-                                        <label class="form-label" for="">Last Name</label>
-                                        <input type="text" class="form-control form--control">
-                                    </div>
+                            </div>
+                            <div class="tab">
+                                <div class="form-header text-center">
+                                    <h4 class="title">Additional Information</h4>
+                                    <p class="mb-4">Please fill up the details to continue</p>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-group mb-3">
-                                        <label class="form-label" for="">Username</label>
-                                        <input type="text" class="form-control form--control">
-                                    </div>
+                                <div class="form-group mb-3">
+                                    <label for="for1" class="form-label">Highest Educational Attainment</label>
+                                    <select name="" id="for1" class="form-select form--control rounded-1 h-45">
+                                        <option value="">Select one</option>
+                                    </select>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-group mb-3">
-                                        <label class="form-label" for="">Email</label>
-                                        <input type="email" class="form-control form--control">
-                                    </div>
+                                <div class="form-group mb-3">
+                                    <label for="for2" class="form-label">What Language(s) do you speak?</label>
+                                    <select name="" id="for2" class="form-select form--control rounded-1 h-45">
+                                        <option value="">Select one</option>
+                                    </select>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-group mb-3">
-                                        <label class="form-label" for="">Password</label>
-                                        <input type="password" class="form-control form--control">
-                                    </div>
+                                <div class="form-group mb-3">
+                                    <label for="for3" class="form-label">How fluent are you in speaking the Language(s)?</label>
+                                    <select name="" id="for3" class="form-select form--control rounded-1 h-45">
+                                        <option value="">Select one</option>
+                                    </select>
                                 </div>
-                                <div class="col-12">
-                                    <div class="form-group mb-3">
-                                        <label class="form-label" for="">Confirm Password</label>
-                                        <input type="password" class="form-control form--control">
-                                    </div>
+                                <div class="text-center mt-3 mt-sm-4">
+                                    <button type="submit" class="btn btn--accent">Sign Up</button>
                                 </div>
-                                <div class="col-12">
-                                    <div class="text-center mt-3 mt-sm-4">
-                                        <button type="submit" class="btn btn--accent">Sign Up</button>
-                                    </div>
+                            </div>
+                            <div class="d-none">
+                                <div style="float:right;">
+                                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
                                 </div>
+                            </div>
+                            <!-- Circles which indicates the steps of the form: -->
+                            <div class="d-none">
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <span class="step"></span>
+                                <span class="step"></span>
                             </div>
                         </form>
                     </div>
