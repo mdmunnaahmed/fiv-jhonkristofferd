@@ -177,3 +177,7 @@ $(".nav-tabs li a").on("click", function () {
 		$(".addValidatorModal").addClass("show-btn");
 	}
 });
+
+$(document).ready(function () {
+	$("select").niceSelect();
+});

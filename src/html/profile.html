@@ -1,0 +1,168 @@
+<!-- meta tags and other links -->
+@@include('../partial-html/_template-top.html')
+
+<!-- Main Content Wrapper -->
+<div class="main-body-wrapper d-flex">
+    @@include('../partial-html/_sidebar.html')
+    <div class="main-content">
+        <div class="main-content-inner">
+            @@include('../partial-html/_top-menu.html')
+            <div class="main-content-inner-inner">
+                <div class="card custom--card">
+                    <div class="card-header pb-0 d-flex flex-wrap gap-3 justify-content-between align-items-start">
+                        <div class="card-header__left">
+                            <h4 class="title">Edit Profile</h4>
+                            <ul class="nav-tabs nav filter mt-2">
+                                <li class="nav-item"><a href="#personal" class="nav-link active" data-bs-toggle="tab">Personal</a></li>
+                                <li class="nav-item"><a href="#password" class="nav-link" data-bs-toggle="tab">Password</a></li>
+                                <li class="nav-item"><a href="#education" class="nav-link" data-bs-toggle="tab">Education Attainment</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content">
+                            <div class="tab-pane show fade active" id="personal">
+                                <div class="row justify-content-center py-5">
+                                    <div class="col-xxl-6 col-lg-10 col-md-10">
+                                        <div class="row gy-4 gx-lg-5">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-bold fs--15px">First Name</label>
+                                                    <input type="text" class="form-control form--control h-45" placeholder="John">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-bold fs--15px">Last Name</label>
+                                                    <input type="text" class="form-control form--control h-45" placeholder="Smith">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-bold fs--15px">Username</label>
+                                                    <input type="text" class="form-control form--control h-45" placeholder="Jsmith1">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-bold fs--15px">Email</label>
+                                                    <input type="text" class="form-control form--control h-45" placeholder="John@gmail.com">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="text-center mt-4">
+                                                    <button data-bs-toggle="modal" data-bs-target="#saveModal" class="btn btn--accent">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="password">
+                                <div class="row justify-content-center py-5">
+                                    <div class="col-xxl-4 col-lg-7 col-md-10">
+                                        <div class="row gy-4 gx-lg-5">
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-bold fs--15px">Current Password</label>
+                                                    <input type="password" class="form-control form--control h-45">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-bold fs--15px">New Password</label>
+                                                    <input type="password" class="form-control form--control h-45">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group">
+                                                    <label class="form-label fw-bold fs--15px">Re-type Password</label>
+                                                    <input type="password" class="form-control form--control h-45">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="text-center mt-4">
+                                                    <button data-bs-toggle="modal" data-bs-target="#saveModal" class="btn btn--accent">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="education">
+                                <div class="row justify-content-center py-5">
+                                    <div class="col-xxl-4 col-lg-7 col-md-10">
+                                        <div class="row gy-4 gx-lg-5">
+                                            <div class="col-lg-12">
+                                                <div class="form-group mb-5">
+                                                    <label for="for1" class="form-label">Highest Educational Attainment</label>
+                                                    <select id="for1" class="w-100 bg--light">
+                                                        <option value="">No schooling</option>
+                                                        <option value="">Elementary graduate</option>
+                                                        <option value="">Junior high school graduate</option>
+                                                        <option value="">Senior high school graduate</option>
+                                                        <option value="">College undergraduate</option>
+                                                        <option value="">Bachelor’s degree</option>
+                                                        <option value="">Master’s degree</option>
+                                                        <option value="">Doctoral degree</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group mb-5">
+                                                    <label for="for2" class="form-label">What Language(s) do you speak?</label>
+                                                    <select id="for2" class="w-100 bg--light">
+                                                        <option value="">Filipino</option>
+                                                        <option value="">Cebuano</option>
+                                                        <option value="">Mandaya</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="form-group mb-5">
+                                                    <label for="for3" class="form-label">How fluent are you in speaking the Language(s)?</label>
+                                                    <select id="for3" class="w-100 bg--light">
+                                                        <option value="">Beginner</option>
+                                                        <option value="">Elementary</option>
+                                                        <option value="">Intermediate</option>
+                                                        <option value="">Advanced</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="text-center mt-4">
+                                                    <button data-bs-toggle="modal" data-bs-target="#saveModal" class="btn btn--accent">Save</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Main Content Wrapper -->
+
+<!-- Modal -->
+<div class="modal fade" id="saveModal" tabindex="-1" aria-labelledby="accountModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm">
+        <div class="modal-content border-0 bg-transparent">
+            <div class="modal-body">
+                <div class="success-message text-center">
+                    <img src="assets/images/icon/arrow.png" alt="" class="icon mw-100">
+                    <p class="text">Your changes have been saved!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@@include('../partial-html/_footer.html')
+@@include('../partial-html/_template-bottom.html')
+</body>
+
+</html>

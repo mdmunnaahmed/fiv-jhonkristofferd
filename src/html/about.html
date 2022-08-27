@@ -1,6 +1,55 @@
 <!-- meta tags and other links -->
 @@include('../partial-html/_template-top.html')
-@@include('../partial-html/_header-two.html')
+
+
+<!-- Header Section -->
+<div class="header style--two">
+    <div class="header-bottom">
+        <div class="header-bottom-area align-items-center">
+            <div class="logo"><a href="index.html"><img src="assets/images/logo.png" alt="logo"></a></div>
+            <ul class="menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="#about">About</a>
+                </li>
+                <li>
+                    <a href="faq.html">FAQ</a>
+                </li>
+            </ul>
+            <div class="header-trigger-wrapper d-flex d-lg-none align-items-center">
+                <div class="header-trigger">
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Header Section -->
+
+<!-- Home Page Section -->
+<div class="body-wrapper bg--accent min-vh-100 overflow-hidden d-flex align-items-center  position-relative">
+    <div class="body-wrapper-inner d-flex flex-wrap pe-lg-0">
+        <div class="body-wrapper-inner__left position-relative pt-80">
+            <h5 class="title text--warning mb-4 pb-2" style="font-family: 'ahsing'; font-size: 80px;">DAPOK</h5>
+            <p class="mb-4 pb-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <button class="btn btn--outline-accent" data-bs-toggle="modal" data-bs-target="#accountModal">Sign in</button>
+            <button class="btn btn--accent ms-3 ms-sm-4" data-bs-toggle="modal" data-bs-target="#accountModal2">Create Account</button>
+            <!-- Button trigger modal -->
+
+            <ul class="social-links d-flex flex-wrap pt-100 gap-3">
+                <li><a href=""><img class="mw-100" src="assets/images/icon/facebook.png" alt="icon"></a></li>
+                <li><a href=""><img class="mw-100" src="assets/images/icon/twitter.png" alt="icon"></a></li>
+                <li><a href=""><img class="mw-100" src="assets/images/icon/instagram.png" alt="icon"></a></li>
+                <li><a href=""><img class="mw-100" src="assets/images/icon/gmail.png" alt="icon"></a></li>
+            </ul>
+        </div>
+        <div class="body-wrapper-inner__right text-end align-self-end">
+            <img src="assets/images/thumb/home.png" alt="thumb" class="mw-100">
+        </div>
+    </div>
+</div>
 
 <!-- Banner Section -->
 <div class="banner-section bg_img" style="background: url(assets/images/thumb/banner.png);">
@@ -14,7 +63,7 @@
 <!-- Banner Section -->
 
 <!-- About Section -->
-<div class="about-section bg-white pt-100 pb-80">
+<div class="about-section bg-white pt-100 pb-80" id="about">
     <div class="container">
         <div class="row gy-5">
             <div class="col-lg-6">
@@ -155,6 +204,7 @@
 
 @@include('../partial-html/_footer.html')
 @@include('../partial-html/_template-bottom.html')
+
 </body>
 
 </html>

@@ -1441,6 +1441,11 @@ textarea.form--control {
     height: 45px !important;
 }
 
+.nice-select .list {
+    height: 100px;
+    overflow-y: auto;
+}
+
 form h1, form h2, form h3, form h4, form h5, form h6 {
     font-family: var(--body-font);
 }
@@ -2744,6 +2749,24 @@ input:-webkit-autofill:focus {
 
 .contact-item__content-title {
     margin-bottom: 8px;
+}
+
+.success-message {
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0 3px 25px hsl(var(--accent)/0.1);
+    padding: 25px;
+    border-radius: 15px;
+    background-color: hsl(var(--white));
+}
+
+.success-message img {
+    margin-bottom: 15px;
 }
 
 .modal-content {
